@@ -1,13 +1,7 @@
-D:\eGroupAI\eGroupAI-faceRecognition-CSharp\eGroupAI-faceRecognition-CSharp\bin\Debug\eGroupAI-faceRecognition-CSharp.exe.config
-D:\eGroupAI\eGroupAI-faceRecognition-CSharp\eGroupAI-faceRecognition-CSharp\bin\Debug\eGroupAI-faceRecognition-CSharp.exe
-D:\eGroupAI\eGroupAI-faceRecognition-CSharp\eGroupAI-faceRecognition-CSharp\bin\Debug\eGroupAI-faceRecognition-CSharp.pdb
-D:\eGroupAI\eGroupAI-faceRecognition-CSharp\eGroupAI-faceRecognition-CSharp\bin\Debug\Newtonsoft.Json.dll
-D:\eGroupAI\eGroupAI-faceRecognition-CSharp\eGroupAI-faceRecognition-CSharp\obj\Debug\eGroupAI-faceRecognition-CSharp.csproj.CoreCompileInputs.cache
-D:\eGroupAI\eGroupAI-faceRecognition-CSharp\eGroupAI-faceRecognition-CSharp\obj\Debug\eGroupAI-faceRecognition-CSharp.csproj.CopyComplete
-D:\eGroupAI\eGroupAI-faceRecognition-CSharp\eGroupAI-faceRecognition-CSharp\obj\Debug\eGroupAI-faceRecognition-CSharp.exe
-D:\eGroupAI\eGroupAI-faceRecognition-CSharp\eGroupAI-faceRecognition-CSharp\obj\Debug\eGroupAI-faceRecognition-CSharp.pdb
 E:\github\eGroupAI-faceRecognition-CSharp-test\eGroupAI-faceRecognition-CSharp\bin\Debug\eGroupAI-faceRecognition-CSharp.exe.config
 E:\github\eGroupAI-faceRecognition-CSharp-test\eGroupAI-faceRecognition-CSharp\bin\Debug\eGroupAI-faceRecognition-CSharp.exe
+E:\github\eGroupAI-faceRecognition-CSharp-test\eGroupAI-faceRecognition-CSharp\bin\Debug\eGroupAI-faceRecognition-CSharp.pdb
+E:\github\eGroupAI-faceRecognition-CSharp-test\eGroupAI-faceRecognition-CSharp\bin\Debug\Newtonsoft.Json.dll
 E:\github\eGroupAI-faceRecognition-CSharp-test\eGroupAI-faceRecognition-CSharp\obj\Debug\eGroupAI-faceRecognition-CSharp.csprojAssemblyReference.cache
 E:\github\eGroupAI-faceRecognition-CSharp-test\eGroupAI-faceRecognition-CSharp\obj\Debug\eGroupAI-faceRecognition-CSharp.csproj.CoreCompileInputs.cache
 E:\github\eGroupAI-faceRecognition-CSharp-test\eGroupAI-faceRecognition-CSharp\obj\Debug\eGroupAI-faceRecognition-CSharp.csproj.CopyComplete

@@ -13,7 +13,7 @@ namespace eGroupAI_faceRecognition_CSharp.engine.util
         {
             if (source.Exists && source.Length > 0)
             {
-                File.Copy(source.FullName, dest.FullName);
+                File.Copy(source.FullName, dest.FullName, true);
                 return true;
                 // StreamReader input = null;
                 //     StreamWriter output = null;

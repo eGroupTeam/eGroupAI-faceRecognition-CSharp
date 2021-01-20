@@ -56,10 +56,13 @@ namespace eGroupAI_faceRecognition_CSharp.engine.util
                 }
                 try
                 {
-                    for (int i = 0; i < dataList.Count; i++)
-                    {
-                        File.WriteAllText(filePath, dataList[i], Encoding.GetEncoding(Charsets.BIG5));
-                    }
+                    File.WriteAllLines(filePath, dataList);
+                    //string content = "";
+                    //for (int i = 0; i < dataList.Count; i++)
+                    //{
+                    //    //content += dataList[i] + "\r\n";
+                    //    //File.WriteAllText(filePath, dataList[i], Encoding.GetEncoding(Charsets.BIG5));
+                    //}
                 }   
                 catch (Exception e)
                 {

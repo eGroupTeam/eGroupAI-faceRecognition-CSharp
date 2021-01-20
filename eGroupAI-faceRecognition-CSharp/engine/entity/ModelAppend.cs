@@ -11,7 +11,7 @@ namespace eGroupAI_faceRecognition_CSharp.engine.entity
     public class ModelAppend : EngineFunc
     {
         private AttributeCheck attributeCheck;
-        private String ListPath;
+        private String listPath;
         private String trainedBinaryPath;
         private String trainedFaceInfoPath;
         private List<String> modelBinaryList;
@@ -28,11 +28,11 @@ namespace eGroupAI_faceRecognition_CSharp.engine.entity
 
         public String getListPath()
         {
-            return ListPath;
+            return listPath;
         }
         public void setListPath(String listPath)
         {
-            ListPath = listPath;
+            this.listPath = listPath;
         }
         public String getTrainedBinaryPath()
         {
@@ -93,9 +93,9 @@ namespace eGroupAI_faceRecognition_CSharp.engine.entity
                 attributeCheck = new AttributeCheck();
             }
             this.disk = enginePath.Substring(0, 1);
-            if (attributeCheck.stringsNotNull(new string[] { enginePath, disk, ListPath, trainedFaceDBPath}))
+            if (attributeCheck.stringsNotNull(new string[] { enginePath, disk, listPath, trainedFaceDBPath}))
             {
-                cli = new StringBuilder("cd " + enginePath + " && " + disk + ": && ModelAppend \"" + ListPath + "\" \"" + trainedFaceDBPath + "\"");
+                cli = new StringBuilder("cd " + enginePath + " && " + disk + ": && ModelAppend \"" + listPath + "\" \"" + trainedFaceDBPath + "\"");
             }
             else
             {

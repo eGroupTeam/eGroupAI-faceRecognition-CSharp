@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +9,13 @@ namespace eGroupAI_faceRecognition_CSharp.engine.entity
 {
     public class ModelInsertResult
     {
+        [JsonProperty]
         List<ModelInsertInfo> modelInsertInfoList = new List<ModelInsertInfo>();
+        [JsonProperty]
         private Boolean isSuccess;
+        [JsonProperty]
         private String faceReload;
+        [JsonProperty]
         private String reloadTime;
 
         public List<ModelInsertInfo> getModelInsertInfoList()

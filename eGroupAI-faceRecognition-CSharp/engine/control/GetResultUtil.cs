@@ -1,4 +1,5 @@
 ﻿using eGroupAI_faceRecognition_CSharp.engine.entity;
+using eGroupAI_faceRecognition_CSharp.engine.util;
 using eGroupAI_faceRecognition_CSharp.library;
 using Newtonsoft.Json;
 using System;
@@ -10,7 +11,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace eGroupAI_faceRecognition_CSharp.engine.util
+namespace eGroupAI_faceRecognition_CSharp.engine.control
 {
     public class GetResultUtil
     {
@@ -127,7 +128,12 @@ namespace eGroupAI_faceRecognition_CSharp.engine.util
                 FileInfo sourceJson = new FileInfo(jsonFolderPath + "\\" + jsonName + ".json");
                 StringBuilder jsonFileName = new StringBuilder(jsonFolderPath + "\\" + jsonName + "_copy.json");
                 FileInfo destJson = new FileInfo(jsonFileName.ToString());
-                if (sourceJson.Exists && sourceJson.Length != destJson.Length)
+                //if (!destJson.Exists)
+                //{
+                //    destJson.Create();
+                //    destJson = new FileInfo(jsonFileName.ToString());
+                //}
+                if (sourceJson.Exists )//&& sourceJson.Length != destJson.Length)
                 {
                     // init func
                     TxtUtil txtUtil = new TxtUtil();

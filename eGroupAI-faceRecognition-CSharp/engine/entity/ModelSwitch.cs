@@ -14,6 +14,7 @@ namespace eGroupAI_faceRecognition_CSharp.engine.entity
         private String switchFilePath;
         private String modelSwitchLogPath;
         private String enginePath;
+        private String modelSwitchStatusPath;
 
         public String getNewModelPath()
         {
@@ -56,5 +57,13 @@ namespace eGroupAI_faceRecognition_CSharp.engine.entity
             this.enginePath = enginePath;
         }
 
+        public String getModelSwitchStatusPath()
+        {
+            return modelSwitchStatusPath;
+        }
+        public void setModelSwitchStatusPath(String modelSwitchStatusPath)
+        {
+            this.modelSwitchStatusPath = modelSwitchStatusPath;
+        }
     }
 }

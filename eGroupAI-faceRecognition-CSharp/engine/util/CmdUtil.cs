@@ -30,13 +30,13 @@ namespace eGroupAI_faceRecognition_CSharp.engine.util
                 cmdParameters += " " + commandList[i];
             }
             ProcessStartInfo startInfo = new ProcessStartInfo("CMD.exe", cmdParameters);
-            try
-            {
-                Process p = new Process();
-                p.StartInfo = startInfo;
-                p.Start();
-            }
-            catch { }
+            //try
+            //{
+            //    Process p = new Process();
+            //    p.StartInfo = startInfo;
+            //    p.Start();
+            //}
+            //catch { }
 
             startInfo.RedirectStandardOutput = true;
             startInfo.UseShellExecute = false;

@@ -1,16 +1,18 @@
 ﻿using eGroupAI_faceRecognition_CSharp.engine.entity;
+using eGroupAI_faceRecognition_CSharp.engine.util;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static eGroupAI_faceRecognition_CSharp.engine.util.TxtUtil;
 
-namespace eGroupAI_faceRecognition_CSharp.engine.util
+namespace eGroupAI_faceRecognition_CSharp.engine.control
 {
     public class CreateEngineFileUtil
     {
-        public Boolean createTrainFaceTxt(String trainListPath, List<TrainFace> trainFaceList)
+        public bool createTrainFaceTxt(String trainListPath, List<TrainFace> trainFaceList)
         {
             // init func
             Guid uuidGenerator = new Guid();
@@ -26,7 +28,7 @@ namespace eGroupAI_faceRecognition_CSharp.engine.util
                 }
             }
             txtUtil.create(trainListPath, dataList);
-            if (File.Exists(trainListPath))
+            if (new FileInfo(trainListPath).Exists)
             {
                 flag = true;
             }

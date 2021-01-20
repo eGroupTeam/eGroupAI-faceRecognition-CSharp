@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,17 +9,28 @@ namespace eGroupAI_faceRecognition_CSharp.engine.entity
 {
     public class TrainResult
     {
+        [JsonProperty]
         private List<String> passFacePathList;
+        [JsonProperty]
         private List<String> failFacePathList;
+        [JsonProperty]
         private int fileSize;
+        [JsonProperty]
         private int faceSize;
+        [JsonProperty]
         private String processingTime;
+        [JsonProperty]
         private String avgPprocessingTime;
+        [JsonProperty]
         private List<TrainInfo> trainInfoList;
         // programe control
+        [JsonProperty]
         private bool trainResultFileExist = true;
+        [JsonProperty]
         private bool trainCmdSuccess = true;
+        [JsonProperty]
         private bool trainStatus = false;
+        [JsonProperty]
         private int trainSize;
         
         public bool isTrainResultFileExist()

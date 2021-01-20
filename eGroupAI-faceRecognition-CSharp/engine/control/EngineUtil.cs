@@ -170,6 +170,51 @@ namespace eGroupAI_faceRecognition_CSharp.engine.control
             return hashMap;
         }
 
+        public ModelSwitchResult modelSwitch(ModelSwitch modelSwitch, Boolean deleteModelSwitchStatus)
+        {
+            // init func
+            AttributeCheck attributeCheck = new AttributeCheck();
+            // init variable
+            Boolean flag = false;
+            ModelSwitchResult modelSwitchResult = new ModelSwitchResult();
+            if (modelSwitch != null && attributeCheck.stringsNotNull(new string[] {modelSwitch.getNewModelPath(), modelSwitch.getSwitchFilePath(), modelSwitch.getEnginePath(), modelSwitch.getModelSwitchStatusPath() }))
+            {
+                // init variable
+                String newModelFaceDB_path = modelSwitch.getNewModelPath() + ".faceDB";
+                FileInfo newModelFaceDB_file = new FileInfo(newModelFaceDB_path);
+
+                if (newModelFaceDB_file.Exists)
+                {
+                    // init func
+                    CheckStatusUtil checkStatusUtil = new CheckStatusUtil();
+                    // Model
+                    List<String> dataList = new List<String>();
+                    dataList.Add(newModelFaceDB_path);
+
+                    // init func
+                    TxtUtil txtUtil = new TxtUtil();
+                    flag = txtUtil.create(modelSwitch.getSwitchFilePath(), dataList);
+                    if (flag)
+                    {
+                        modelSwitchResult = checkStatusUtil.modelSwitch(modelSwitch.getModelSwitchStatusPath());
+                        if (modelSwitchResult != null && deleteModelSwitchStatus)
+                        {
+                            try
+                            {
+                                File.Delete(modelSwitch.getModelSwitchStatusPath());
+                            }
+                            catch (IOException e)
+                            {
+                                Console.WriteLine(JsonConvert.SerializeObject(e));
+                            }
+                        }
+                    }
+                }
+            }
+            return modelSwitchResult;
+        }
+
+
         public ModelInsertResult modelInsert(ModelInsert modelInsert, Boolean deleteModelInsertStatusFlag, long waitTimeMs)
         {
             AttributeCheck attributeCheck = new AttributeCheck();
