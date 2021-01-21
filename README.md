@@ -1,5 +1,5 @@
 # Engine Version V4.2.2(2020/11/20 update)
-* This is C# QuickStart , there has other language QuickStart
+* Other language
   * [QuickStart-JAVA](https://github.com/eGroupTeam/eGroupAI-faceRecognition-JAVA)
 
 # QuickStart
