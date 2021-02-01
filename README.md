@@ -1,7 +1,10 @@
 # Engine Version V4.2.2(2020/11/20 update)
+* This is the C# project , below is the other language quickStart
+  * [QuickStart-JAVA](https://github.com/eGroupTeam/eGroupAI-faceRecognition-JAVA)
 
 # QuickStart
 * [QuickStart Document](https://reurl.cc/Y6r9N4)
+* [eGroupAI【Tutorial】│ Face Recognition SDK - Quick Start by C#](https://www.youtube.com/watch?v=Xg2abfbXuc4&t=7s)
 * Video - Quick Start by C#
    * Clone Project
    * Copy project env into project
