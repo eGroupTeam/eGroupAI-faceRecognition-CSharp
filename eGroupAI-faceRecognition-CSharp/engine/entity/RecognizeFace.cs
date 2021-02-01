@@ -227,11 +227,10 @@ namespace eGroupAI_faceRecognition_CSharp.engine.entity
                 //isHideMainWindow = false;
                 //isHideThreadWindow = false;
                 cli = new StringBuilder("cd " + enginePath + " && " + disk + ": && RecognizeFace " + "--threshold " + threshold + " "
-                    + (isHideMainWindow == false ? " --show-main-window " : "") + (isHideThreadWindow == false ? " --show-thread-window " : "")
+                    + (!isHideMainWindow ? " --show-main-window " : "") + (isHideThreadWindow == false ? " --show-thread-window " : "")
                     + (attributeCheck.stringsNotNull(new string[] { resolution }) ? " --resolution " + resolution + " " : "--resolution 720p ")
-                    + (isOutputFrame == false || !attributeCheck.stringsNotNull(new string[] { outputFramePath }) ? "" : " --output-frame \"" + outputFramePath + "\" ")
-                    + (isOutputFace == false || !attributeCheck.stringsNotNull(new string[] { outputFacePath }) ? "" : " --output-face \"" + outputFacePath + "\" ")
-                    + (!attributeCheck.stringsNotNull(new string[] { outputFacePath }) ? "" : "--output-face \"" + outputFacePath + "\" ") + inputSource + " "
+                    + (!isOutputFrame || !attributeCheck.stringsNotNull(new string[] { outputFramePath }) ? "" : " --output-frame \"" + outputFramePath + "\" ")
+                    + (!isOutputFace || !attributeCheck.stringsNotNull(new string[] { outputFacePath }) ? "" : " --output-face \"" + outputFacePath + "\" ") + inputSource + " "
                     + (minimumFaceSize != 0 ? "--minimum-face-size " + minimumFaceSize + " " : "")
                     + (attributeCheck.stringsNotNull(new string[] { mainResolution }) ? "--output-window-resolution " + mainResolution + " " : "")
                     + (threads != 0 ? "--threads " + threads + " " : "--threads 1 ")
