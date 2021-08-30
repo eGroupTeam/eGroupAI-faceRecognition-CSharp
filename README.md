@@ -5,7 +5,7 @@
 
 # QuickStart
 * [QuickStart Document](https://reurl.cc/Y6r9N4)
-* [eGroupAI【Tutorial】│ Face Recognition SDK - Quick Start by C#](https://www.youtube.com/watch?v=Xg2abfbXuc4&t=7s)
+* [eGroupAI【Tutorial】│ Face Recognition SDK - Quick Start by C#](https://www.youtube.com/watch?v=8MHSs_Hws2s)
 * Video - Quick Start by C#
    * Clone Project
    * Copy project env into project
